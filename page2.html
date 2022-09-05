@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="Default">
+<html lang="Français">
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="">
@@ -7,18 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
     
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
+	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
 	
     
-	<script src="./js/jquery-2.1.0.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
+	<script src="./js/jquery-2.1.0.js"></script>
+	<script src="./js/bootstrap.js"></script>
+	<script src="./js/blocs.js"></script>
 	<script src="./js/jqBootstrapValidation.js"></script>
 	<script src="./js/formHandler.js"></script>
-    <title>page2</title>
+    <title>Contact</title>
 
     
 <!-- Analytics -->
@@ -50,7 +50,7 @@
 					<li>
 					</li>
 					<li>
-						<a href="page2.html">page 2</a>
+						<a href="page2.html">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -82,40 +82,37 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+				<form id="form_1" action="#" method="post" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!" >
 					<div class="form-group">
-						<label>
+						<label for="name">
 							Nom
 						</label>
-						<input id="name" class="form-control" required />
+						<input name="name" id="name" type="text" class="form-control" required />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="email" >
 							Adresse email
 						</label>
-						<input id="email" class="form-control" type="email" required />
+						<input name="email" id="email" class="form-control" type="text" required />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="nous-connaitre">
 							Comment nous avez-vous connu ?
 						</label>
-						<input class="form-control" type="email" required id="input_504" />
+						<input name="nous-connaitre" id="nous-connaitre" class="form-control" type="text" required  />
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="message" >
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+						</label>
+						<textarea name="message" id="message" class="form-control" rows="4" cols="50" required></textarea>
 					</div> 
 					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
 						Envoyer
 					</button>
 				</form>
 			</div>
-			<div class="col-sm-6">
-				<p>
-					contact@agencelapanthere.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
-				</p>
-			</div>
+			>
 		</div>
 	</div>
 </div>
@@ -131,28 +128,34 @@
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-12">
+
+				<div class="col-sm-6">
+				<p id="contact-footer">
+					contact@agencelapanthere.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
+				</p>
+			</div>
 				<p class="text-center white">
 					Agence La Panthère - Agence web basée à Lyon.<br>
 				</p>
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+							<a class="social" href="https://twitter.com/"><span class="fa fa-twitter icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+							<a class="social" href="https://fr-fr.facebook.com/"><span class="fa fa-facebook icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+							<a class="social" href="https://www.google.fr/"><span class="fa fa-dribbble icon-md"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+							<a class="social" href="https://www.instagram.com/?hl=fr"><span class="fa fa-instagram icon-md"></span></a>
 						</div>
 					</div>
 				</div>
