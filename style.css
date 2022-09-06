@@ -44,6 +44,12 @@ a:hover {
     padding-right: 0;
 }
 
+
+.col-sm-12 .col-sm-6 p {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
 .bloc-lg {
     padding: 100px 50px;
 }
@@ -278,7 +284,10 @@ a:hover {
 .voffset-lg {
     margin-top: 80px;
 }
-
+#row-formulaire {
+    display: flex;
+    justify-content: center;
+}
 .row-no-gutters {
     margin-right: 0;
     margin-left: 0;
@@ -411,6 +420,15 @@ a:hover {
         float: none;
         margin: 10px auto 0;
     }
+
+    .col-sm-12 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    }
+    
 }
 
 .nav > li > .dropdown a {
@@ -861,7 +879,7 @@ h4 {
     }
 }
 
-@media (max-width: 992px) and (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 992px) {
     .navbar .nav {
         max-width: 80%
     }
@@ -1057,6 +1075,9 @@ h4 {
         width: 180px;
         height: 320px;
     }
+    .bloc-mob-center-text {
+        text-align: center;
+    }
 }
 
 @media (max-width: 400px) {
@@ -1066,8 +1087,9 @@ h4 {
     }
 }
 
-@media (max-width: 767px) {
-    .bloc-mob-center-text {
-        text-align: center;
+@media (max-width: 425px) {
+    .scrollToTop {
+        display:flex;
+
     }
 }
