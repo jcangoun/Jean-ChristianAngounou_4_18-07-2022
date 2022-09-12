@@ -97,7 +97,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/texture-paper.webp");
     background-size: 280px 280px;
 }
 
@@ -323,11 +323,15 @@ a:hover {
     max-height: 200px;
     margin: 0 5px 0 0;
     display: inline;
-}
-
-.navbar-brand img[src$=svg] {
     min-width: 100px;
+        width: 210px;
+        height: 40px;
 }
+     a img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
 
 .nav-center .navbar-brand img {
     margin: 0;
@@ -428,7 +432,11 @@ a:hover {
     flex-direction: column;
     align-items: center;
     }
-    
+    .col-sm-6 {
+        /* en width et height avec la bonne taille 270px / 270px ca change rien */
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .nav > li > .dropdown a {
@@ -850,11 +858,11 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("img/dots-bg.webp");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("img/lines-h2-bg.webp");
 }
 
 .bg-banniere {
@@ -862,8 +870,8 @@ h4 {
 }
 
 .bg-presentation {
-    /* Ici l'image bmp ne marche pas quand on la met en webp */
-    background-image: url("img/image-de-presentation.bmp");
+    /* ohoh Ici l'image bmp ne marche pas quand on la met en webp */
+    background-image: url("img/image-de-presentation.webp");
 }
 
 @media (max-width: 1024px) {
@@ -1008,14 +1016,13 @@ h4 {
         -webkit-box-shadow: none;
         box-shadow: none;
     }
-    .navbar-brand img {
-        max-height: 40px;
-        width: auto;
-    }
+    
     .nav-invert .navbar-header {
         float: none;
         width: 100%;
     }
+
+   
     .nav-invert .navbar-toggle {
         float: left;
         margin-left: 10px;
