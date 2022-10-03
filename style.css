@@ -324,7 +324,7 @@ a:hover {
     margin: 0 5px 0 0;
     display: inline;
     min-width: 100px;
-        width: 210px;
+        width: 220px;
         height: 40px;
 }
      a img {
@@ -719,7 +719,7 @@ p {
 }
 
 .tight-width-whitespace {
-    max-width: 600px;
+    /* max-width: 600px; */
     margin: auto auto auto auto;
 }
 
@@ -760,7 +760,7 @@ h3 {
 }
 
 .med-width-whitespace {
-    max-width: 800px;
+    /* max-width: 800px; */
     margin: auto auto auto auto;
     box-shadow: 0px 0px 0px #000000;
 }
@@ -890,7 +890,8 @@ h4 {
 
 @media (min-width: 768px) and (max-width: 992px) {
     .navbar .nav {
-        max-width: 80%
+        max-width: 80%;
+        margin-right: 10px;
     }
     .nav-center.navbar .nav {
         max-width: 100%
