@@ -90,11 +90,9 @@ a:hover {
 .b-parallax {
     background-attachment: fixed;
 }
-
 .d-bloc {
     color: rgba(255, 255, 255, .7);
 }
-
 .d-bloc button:hover {
     color: rgba(255, 255, 255, .9);
 }
